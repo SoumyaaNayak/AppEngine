@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog">
+    <sc_cat_item_catalog action="DELETE">
+        <sc_cat_item display_value="Apply Leave">dce8e6b693401310717a7efdfaba1002</sc_cat_item>
+        <sc_catalog display_value="Service Catalog">e0d08b13c3330100c8b837659bba8fb4</sc_catalog>
+        <sys_class_name>sc_cat_item_catalog</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-24 10:53:08</sys_created_on>
+        <sys_id>eddaea3e93401310717a7efdfaba1031</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Service Catalog.Apply Leave</sys_name>
+        <sys_package display_value="Leave Management System" source="x_2051811_leave_0">5a42d9b293001fd4717a7efdfaba1064</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Leave Management System">5a42d9b293001fd4717a7efdfaba1064</sys_scope>
+        <sys_update_name>sc_cat_item_catalog_eddaea3e93401310717a7efdfaba1031</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-24 10:53:08</sys_updated_on>
+    </sc_cat_item_catalog>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Leave Management System">5a42d9b293001fd4717a7efdfaba1064</application>
+        <file_path/>
+        <instance_id>1dc6d233fb5ca2d00921f633beefdc76</instance_id>
+        <instance_name>dev306070</instance_name>
+        <name>sc_cat_item_catalog_eddaea3e93401310717a7efdfaba1031</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog"><sc_cat_item_catalog action="INSERT_OR_UPDATE"><sc_cat_item display_value="Apply Leave">dce8e6b693401310717a7efdfaba1002</sc_cat_item><sc_catalog display_value="Service Catalog">e0d08b13c3330100c8b837659bba8fb4</sc_catalog><sys_class_name>sc_cat_item_catalog</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-10-24 10:53:08</sys_created_on><sys_id>eddaea3e93401310717a7efdfaba1031</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Service Catalog.Apply Leave</sys_name><sys_package display_value="Leave Management System" source="x_2051811_leave_0">5a42d9b293001fd4717a7efdfaba1064</sys_package><sys_policy/><sys_scope display_value="Leave Management System">5a42d9b293001fd4717a7efdfaba1064</sys_scope><sys_update_name>sc_cat_item_catalog_eddaea3e93401310717a7efdfaba1031</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-10-24 10:53:08</sys_updated_on></sc_cat_item_catalog></record_update>]]></payload>
+        <payload_hash>739680542</payload_hash>
+        <record_name>Service Catalog.Apply Leave</record_name>
+        <reverted_from/>
+        <source>6a421db293001fd4717a7efdfaba107f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-24 10:53:08</sys_created_on>
+        <sys_id>e5daea3e93401310717a7efdfaba1037</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a16d8b01530000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-24 10:53:08</sys_updated_on>
+        <type>Catalog Items Catalog</type>
+        <update_guid>a1daea3e7540131093ebef05687b0336</update_guid>
+        <update_guid_history>a1daea3e7540131093ebef05687b0336:739680542</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Service Catalog.Apply Leave">254b22be93401310717a7efdfaba10f3</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-24 10:55:03</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_catalog">sc_cat_item_catalog</sys_db_object>
+        <sys_id>bc773bd278234d64a27dd79add39f444</sys_id>
+        <sys_metadata>eddaea3e93401310717a7efdfaba1031</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Service Catalog.Apply Leave</sys_name>
+        <sys_package display_value="Leave Management System" source="x_2051811_leave_0">5a42d9b293001fd4717a7efdfaba1064</sys_package>
+        <sys_parent display_value="Apply Leave">dce8e6b693401310717a7efdfaba1002</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Leave Management System">5a42d9b293001fd4717a7efdfaba1064</sys_scope>
+        <sys_scope_delete display_value="">02741220ae1d491c980198b2dd64fb90</sys_scope_delete>
+        <sys_update_name>sc_cat_item_catalog_eddaea3e93401310717a7efdfaba1031</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_catalog_eddaea3e93401310717a7efdfaba1031">e5daea3e93401310717a7efdfaba1037</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-24 10:55:03</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
