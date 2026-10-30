@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="timeFromCreateToActivate=1327000" db_object_id="36c2953693001fd4717a7efdfaba10a5" extends="task" label="Leave Management System" max_length="40" name="x_2051811_leave_0_leave_management_system" type="collection">
+        <element label="Reason" max_length="100" name="reason" type="string"/>
+        <element label="Employee" max_length="32" name="employee" reference="sys_user" type="reference"/>
+        <element choice="3" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Approved" sequence="1" value="approved"/>
+                <element inactive_on_update="false" label="Rejected" sequence="2" value="rejected"/>
+                <element inactive_on_update="false" label="Applied" sequence="0" value="applied"/>
+            </choice>
+        </element>
+        <element label="End Date" max_length="40" name="end_date" type="glide_date"/>
+        <element choice="3" label="Leave Type" max_length="40" name="leave_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Personal Leave" sequence="0" value="personal_leave"/>
+                <element inactive_on_update="false" label="Casual Leave" sequence="1" value="casual_leave"/>
+                <element inactive_on_update="false" label="Sick Leave" sequence="2" value="sick_leave"/>
+            </choice>
+        </element>
+        <element label="Start Date" max_length="40" name="start_date" type="glide_date"/>
+    </element>
+</database>
