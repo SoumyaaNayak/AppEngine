@@ -1,0 +1,940 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,timeFromCreateToActivate=152786000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>9a41b6c2ff12101088e94ee9453bf1a4</copied_from>
+        <copied_from_name>FlowTemplate_Empty</copied_from_name>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>leave_approval_process</internal_name>
+        <label_cache>[{"name":"Created_1.current.employee.manager","label":"Trigger - Record Created➛Leave Management System Record➛Employee➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sys_user","column_name":"manager","choices":null,"usedInstances":{"4e97f400-4adf-4720-bfe2-c86281aba5fe":["approval_conditions"],"df93d8f3-835b-4a9c-a7ed-dcfe3a2db2f5":["approval_conditions"]},"attributes":null},{"name":"Service Catalog_1.request_item","label":"Trigger - Service Catalog➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","parent_table_name":null,"column_name":null,"choices":[{"label":null,"value":null,"order":0}],"usedInstances":{"df93d8f3-835b-4a9c-a7ed-dcfe3a2db2f5":["record"]},"attributes":{"default_search_field":"number"}},{"name":"Created_1.current.employee","label":"Trigger - Record Created➛Leave Management System Record➛Employee","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_2051811_leave_0_leave_management_system","column_name":"employee","choices":null,"usedInstances":{},"attributes":null},{"name":"df93d8f3-835b-4a9c-a7ed-dcfe3a2db2f5.approval_state","label":"1 - Ask For Approval➛Approval State","reference":null,"reference_display":"Approval State","type":"choice","base_type":"choice","parent_table_name":null,"column_name":null,"choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{"7f61c74c-3afb-4b73-88f5-6d25524915d6":["condition"],"28238a61-f339-45ed-bf09-9565c877f8c8":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current","label":"Trigger - Record Created➛Leave Management System Record","reference":"x_2051811_leave_0_leave_management_system","reference_display":"Leave Management System","type":"reference","base_type":"reference","parent_table_name":null,"column_name":null,"choices":null,"usedInstances":{"4e97f400-4adf-4720-bfe2-c86281aba5fe":["record"],"b27d23ff-3f16-4a7c-adc9-dcbe7cdcc248":["record"],"02f51b51-1fb0-475f-b91f-1d587f0bb5ab":["record"],"a8a1c123-f2f1-48c4-9f61-f53732ca014b":["record"],"afc17db9-1319-4d4b-be58-05fd5faf63e7":["requested_item"],"60db3b6b-e12d-4c68-9df8-f2735b28674c":["record"],"df93d8f3-835b-4a9c-a7ed-dcfe3a2db2f5":["record"],"34d4a8b8-abb6-48d3-a2ca-e37b5d1fdd66":["record"],"bea42cb7-4fb5-4693-82ae-9c146bfc5b06":["record"]},"attributes":{}}]</label_cache>
+        <master_snapshot>9fa95bfe93881310717a7efdfaba1087</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Leave Approval Process</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>860c58a393445710717a7efdfaba1026</remote_trigger_id>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-24 13:58:11</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8035d77293881310717a7efdfaba1016</sys_id>
+        <sys_mod_count>91</sys_mod_count>
+        <sys_name>Leave Approval Process</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Leave Management System" source="x_2051811_leave_0">5a42d9b293001fd4717a7efdfaba1064</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Leave Management System">5a42d9b293001fd4717a7efdfaba1064</sys_scope>
+        <sys_update_name>sys_hub_flow_8035d77293881310717a7efdfaba1016</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-26 10:16:34</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record>879534e393885710717a7efdfaba10ef</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=8035d77293881310717a7efdfaba1016"/>
+    <sys_variable_value action="delete_multiple" query="document_key=8035d77293881310717a7efdfaba1016"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_2051811_leave_0_leave_management_system">^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>false</on_update>
+        <published_version/>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-26 08:24:40</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>860c58a393445710717a7efdfaba1026</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Leave Management System">5a42d9b293001fd4717a7efdfaba1064</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-26 08:24:40</sys_updated_on>
+        <table>x_2051811_leave_0_leave_management_system</table>
+        <trigger_definition/>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>8035d77293881310717a7efdfaba1016</identifier>
+        <identifier_type>flow</identifier_type>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-26 08:24:40</sys_created_on>
+        <sys_id>ce0c58a393445710717a7efdfaba1027</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-26 10:13:16</sys_updated_on>
+        <trigger display_value="">860c58a393445710717a7efdfaba1026</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=8035d77293881310717a7efdfaba1016^sys_idNOT INce0c58a393445710717a7efdfaba1027"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=8035d77293881310717a7efdfaba1016"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=8035d77293881310717a7efdfaba1016^sys_idNOT IN4435d77293881310717a7efdfaba101c"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>8035d77293881310717a7efdfaba1016</id>
+        <name>Leave Approval Process</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-24 13:58:11</sys_created_on>
+        <sys_id>4435d77293881310717a7efdfaba101c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-24 13:58:11</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=4435d77293881310717a7efdfaba101c"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=8035d77293881310717a7efdfaba1016^sys_idNOT IN00955fb293881310717a7efdfaba10a6,88959fb293881310717a7efdfaba104c"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Leave Approval Process">8035d77293881310717a7efdfaba1016</model>
+        <model_id>8035d77293881310717a7efdfaba1016</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_8035d77293881310717a7efdfaba1016</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-24 13:59:48</sys_created_on>
+        <sys_id>00955fb293881310717a7efdfaba10a6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Leave Management System">5a42d9b293001fd4717a7efdfaba1064</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-24 14:17:46</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=00955fb293881310717a7efdfaba10a6"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Leave Approval Process">8035d77293881310717a7efdfaba1016</model>
+        <model_id>8035d77293881310717a7efdfaba1016</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_8035d77293881310717a7efdfaba1016</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-24 13:59:49</sys_created_on>
+        <sys_id>88959fb293881310717a7efdfaba104c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Leave Management System">5a42d9b293001fd4717a7efdfaba1064</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-24 14:17:46</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=88959fb293881310717a7efdfaba104c"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=8035d77293881310717a7efdfaba1016"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=8035d77293881310717a7efdfaba1016"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=8035d77293881310717a7efdfaba1016^sys_idNOT IN2015746393c45710717a7efdfaba103e"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Leave Approval Process">8035d77293881310717a7efdfaba1016</flow>
+        <generation_source/>
+        <name>Service Catalog</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-26 10:14:03</sys_created_on>
+        <sys_id>2015746393c45710717a7efdfaba103e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-26 10:14:03</sys_updated_on>
+        <trigger_definition display_value="Service Catalog">c43a1011c36813002841b63b12d3ae15</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/61UTW/bMAz9K4FOG5CDk6zNmtuQoUCAbAWarpdiMBiJToTKkifJbrOg/31k/BF3M4YB3SkSTfI9Pj7l4SgMbNGIhbgt7ejauKfRyoqx0Dait2DuDgXSR7l3WiLF68NahygWD0eR3YMpOSFzHnfelVZRUrbu9cy4p6bfVxmrHHZcx+cNGpQRlVhkYAJS5Fvo377oELTdNYGXcQ92C/Lx77DnjNE7hRmUJr5/I4HvY5GDVRCdP5yTvMvvMC8MROyCziv0YjFJkrGomPLmEFaqRrWQM74vbcpcU82yV81cdFQ6ULPD/Tki99ooj5aUJwoFeOoQuf+xW9da28ehZM2gl8lVIufTq/l8msxmSZJdbDOZSTn/OEkuJxdXVDVshkGq8Tdn8L1dwLIN9gXA54hW9XT9U0SPoG6sOQf2NFg9Tw7PQf8kxA8J52VIs8lGmO6aNqI1e/0METbRlzKWvtOQmYWTec2/26Ua8lszXMKOHOr1yvHV0ENp5WFLNWjL/09w8maCUyZYS3dTRO3IVWLGO4et4ZpwCLUzPEoqSaPXux0VUpEzZW6/DhmoYd8zeBlog1iwS3jt7cva7N3Tbbvia21PlJqPxkkw3Q0iIW/LyPodBagKqIKtTyZA8TJmoksDITSEau+kP0rucXp0LXp6mvFUIr0u4icZdYXdP8AvVvv7+TgFAAA=</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>service_catalog</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=8035d77293881310717a7efdfaba1016^sys_idNOT IN7d52d0c393845310717a7efdfaba10dd,b8231c4793845310717a7efdfaba109c,e9a2d00793845310717a7efdfaba1031"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f8f2e9920b10030085c083eb37673abd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Leave Approval Process">8035d77293881310717a7efdfaba1016</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-24 18:25:21</sys_created_on>
+        <sys_id>7d52d0c393845310717a7efdfaba10dd</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Leave Management System">5a42d9b293001fd4717a7efdfaba1064</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-26 10:16:24</sys_updated_on>
+        <ui_id>df93d8f3-835b-4a9c-a7ed-dcfe3a2db2f5</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1X30/bMBD+V6o8l85pmpDyNg0hMe2HBIwXiiLXvlBPrlPihI1V/d93jp0mtCNU0GlM4gXhO5/vu8/fOderpSe4d+TBKApC/HOYBsQf+iSGKI7ZmFAWR1E4Cry+p+gccCddLPLsjsokB6ozhQ5clMaD/3KhF5LeXzYWNhOS56C8o6vrvregOZ5SQO4dLTdcxf0CEkmnIDHwvMiFusHwXcHVge8dut5Zje5R2CYhOnSdKsu5wTXse/CzAMUBU6dUauh7c6o4LbL8fm3BU/hXJRvDTKjCVjynP7X4hUf7ETEbU8AamaNjvUwcVTVLmWDwdVEIhFZZCjqVNYWZLOfqi63DkAwpLWXRIrnUeB4sDGiDwkFKz2fZj7M64YlQVX3OKTNG5XpFC2RhWhagzcWU4mKDG2v5tHk7IGGOGZM5souWxFAsqiwIej64kbgYpDL7gei0uFEDykyFAySTDk7QflyZL2kuTLmf8RgMNum+KXFbwqm5/Wg4jcYk5gc8JdODURyEB5QBOYDIDyHkEQv9wFtV1Ca3pSnKkuToSCyjuEGzXCyK9wjhDlzlq77TP/HTIYzHQzL1CQkIiUNG4gCmwWF0GFAe/0FIqQDJW/KvHdtt0PI8rx1OTKpepYD+zni3WuLEAX6sENcQ1TJRNtnemyIm5B91RZGXL2mKv6P1p3RrC35CvKxTDNB6vL9nZa46tJvMhK6u9FENt3bsS8s7wK+DP1r8m1LeLKtDycGbkl+xkg/jLikw0lx5DgxvtCXh5fIc8jtkufcBccrsJvEHOeBHRBeJKGC+Wu1xPjnOWGk47J0e1yreAXodfVZj36zF6Za70xPBG+GSbuFaTeyi22D4pto9v79h19Wn4+ameYmU0ALaup14FunEO5p4KlMw8foTz+xKjB4qM+5AhGtHZVsuVytrKXPqDvBbyyaa03td7dRsBryU1vrAYpXt7PvslHOXoHeMuN9diNaz/zRr63Yrbfwfiazn+LoSy5xoP/rh3h790X860v+9ST1ZT7fYLdjiLx7FR526gJYI1jMJyxQXBq9uNZade0Fvi7nleZ6om1+ZKDhdC3oH4OsvgIvrLMQJu/nl6oKcqEf7+iD8u0Hmdar6pQKess5JgDX3brlrJKtZgiNLNa5sq/bMDjPAe6fW/zztXpicD+bvHfA+CN7G75RaLTfmbX+P8/abSF8u0uvfQWJ7wPITAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=7d52d0c393845310717a7efdfaba10dd"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Leave Approval Process">8035d77293881310717a7efdfaba1016</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>28238a61-f339-45ed-bf09-9565c877f8c8</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-24 18:28:50</sys_created_on>
+        <sys_id>b8231c4793845310717a7efdfaba109c</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Leave Management System">5a42d9b293001fd4717a7efdfaba1064</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-26 10:16:24</sys_updated_on>
+        <ui_id>bea42cb7-4fb5-4693-82ae-9c146bfc5b06</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1SwWrjMBD9laCzMXachja3hRDYw7bQXXopxYylcSKQJa8sp82W/vuOZDlJy7bk0LAsrE+e0cyb92be/TOTgi3YDEWWX+VzXuRFMc2y6eUsr+ZFlU9FAYg5S5iGBqnSIjdWULwF1fsE/QrZtQp2d4cM30glLGq2uH9IWAuWmh1atnh+8+R2LZYKKlTUuDS8b1C7ydclYZxKbOy+HZm9ZepnUCwieil9kp48nzxLGD451AJpXA2qw4Q1oAU4Y3ds4WxPCYsgbrTa7Ss2UrtBaQNPnfxF+LPM19VI0njcwj4s44bG5RjJ8aZ10ugh46BS4+aM6ht9PUjwu8UaeuWOdtt3hIetp+xJDAzr7xvzeDvOW0kd1EW2ynBQ+wics7LqHXb+HKgwLKWBtpV6XbbWbGVoJipNulYUpLUyjzSzk2udAve8U1oQpCvKL0P6Dqz0Ir4RDDW/BPHlz97PHWREwmXQHASX4VBU2nErW/eFgLcYab4k0ZnZ9EMD4OHewZDdeZz5AxvCcTgZkJKTuY0AK4lKdH8gG83p4oByGwfs/flpBs3nWfj+2/QMNq0uPrICvzpc/gjzPFb1+JPrAf9Ubq+a3+E6OvU4F1168WkmvfxL9oyM/jF/vufKh9+MvPhQ2AcAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b8231c4793845310717a7efdfaba109c"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Leave Approval Process">8035d77293881310717a7efdfaba1016</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>7f61c74c-3afb-4b73-88f5-6d25524915d6</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-24 18:26:42</sys_created_on>
+        <sys_id>e9a2d00793845310717a7efdfaba1031</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Leave Management System">5a42d9b293001fd4717a7efdfaba1064</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-26 10:16:24</sys_updated_on>
+        <ui_id>34d4a8b8-abb6-48d3-a2ca-e37b5d1fdd66</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1SwWrjMBD9laCzMXachja3hRDYw7bQXXopxYylcSKQJa8sp82W/vuOZDlJy7bk0LAsrE+e0cyb92be/TOTgi3YDEWWX+VzXuRFMc2y6eUsr+ZFlU9FAYg5S5iGBqnSIjdWULwF1fsE/QrZtQp2d4cM30glLGq2uH9IWAuWmh1atnh+8+R2LZYKKlTUuDS8b1C7ydclYZxKbOy+HZm9ZepnUCwieil9kp48nzxLGD451AJpXA2qw4Q1oAU4Y3ds4WxPCYsgbrTa7Ss2UrtBaQNPnfxF+LPM19VI0njcwj4s44bG5RjJ8aZ10ugh46BS4+aM6ht9PUjwu8UaeuWOdtt3hIetp+xJDAzr7xvzeDvOW0kd1EW2ynBQ+wics7LqHXb+HKgwLKWBtpV6XbbWbGVoJipNulYUpLUyjzSzk2udAve8U1oQpCvKL0P6Dqz0Ir4RDDW/BPHlz97PHWREwmXQHASX4VBU2nErW/eFgLcYab4k0ZnZ9EMD4OHewZDdeZz5AxvCcTgZkJKTuY0AK4lKdH8gG83p4oByGwfs/flpBs3nWfj+2/QMNq0uPrICvzpc/gjzPFb1+JPrAf9Ubq+a3+E6OvU4F1168WkmvfxL9oyM/jF/vufKh9+MvPhQ2AcAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e9a2d00793845310717a7efdfaba1031"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=8035d77293881310717a7efdfaba1016"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=8035d77293881310717a7efdfaba1016^sys_idNOT IN9d03944793845310717a7efdfaba10b9,a6825cc393845310717a7efdfaba1001"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">2e43548793845310717a7efdfaba1048</block>
+        <comment/>
+        <connected_to>7f61c74c-3afb-4b73-88f5-6d25524915d6</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Leave Approval Process">8035d77293881310717a7efdfaba1016</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-24 18:28:20</sys_created_on>
+        <sys_id>9d03944793845310717a7efdfaba10b9</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Leave Management System">5a42d9b293001fd4717a7efdfaba1064</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-26 08:24:37</sys_updated_on>
+        <ui_id>28238a61-f339-45ed-bf09-9565c877f8c8</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Vy27bMBD8lYJn2dDDji3fghYBDKQN0AS5tIGwIpc2W5pUScqJa/jfu5TkJMgDLYqgp97M2dfMagfeM9uGpg3+yp56r1aGLb7cJEyZiNHvPZPa3p7bleJL4wMYjpc7vxRswUqRFuVkMiuL+WRaZOksm8EMpZBQQ5bWJUuYgQ1SJrdGqKCsqTogYVvQbQw4/Iac5iRMKN9o2F0/C/C10sLhwKsBRx0COrbYPwmFXYOVhho11V8Gp8yKylVkKlOQWckzXuQnRZ6m+XyS1SdFneWiAISc8o6F749U3513yOsa4jzC/XGSdSLSytKE4V1AI5BGS9AeE7YBIyBYt7tHHIK4MPoBWCsTqB2LyXde/aTe+XQaEyWSRo598P5ZDRvrYb62iuNFEwn2SIBaDzXc6nZjPvU64q5RQqvDcdeEtJ76YRNJRxYDJXm5trefjwPPlOkEDkFtOej7FwRaQ90G9PHDoMYNNao20DS0nKpxdqu6YuKyGa80PcbxrmhovLkx8Eh8TDuC8RnhHzr4GpyKKj5SGyruadbgFa+6+6R2wZGEQ7eW6kcbCfUCBylVvw1K8NypJpzSnC0OrA/J2x73o7ve74UsCzGXxWheTOvRBEo+onoxElxiAbmoczkdky7aDOiKZgc8HL62aVqI/vbpep654q3a/gNPZS956uWlvWKk/DdGip/+D32Upul/Iz02kvJVb4hBWzf8r310Ew+/n+D7uxHIlSciVxFbHv9LYmBHBxDd9gDdWvc9SnjADr8A5lPjm5UGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">aa43548793845310717a7efdfaba1043</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Leave Approval Process">8035d77293881310717a7efdfaba1016</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-24 18:26:13</sys_created_on>
+        <sys_id>a6825cc393845310717a7efdfaba1001</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_scope display_value="Leave Management System">5a42d9b293001fd4717a7efdfaba1064</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-26 08:24:37</sys_updated_on>
+        <ui_id>7f61c74c-3afb-4b73-88f5-6d25524915d6</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VXU/bMBT9K8jPbeXETWn7hjYhIbEhDcTLhqIb+7q15tpZ7ABd1f++6yQFxIo2TTzuLT7369yPo+yYb2PdxnDjz0IwK8eWX+9GzLiE0feOaesfLv3KyAsXIjiJ19twodiSwWyeF1KKhZhPC5Hx0+wUTlErDRVknGdsxBxskDyld8pE413ZASN2D7ZNBqNPoK4bf4+BUGVCbWF7e9Qo18aqBgd+NTSUKWLDlrtXpritsbRQoaUc17ExbkXhJjHWHHS2kJkU+UzknOfzaVbNRJXlSgCCIL9D4IcD5ZPLDnm7l1SP8HCo5BuVaGV8xPAxolNIpTXYgCO2Aacg+mb7hDQI6srZZ2BtXKR0LDk/BvOTcudFkRw1Uo8Se+PTsxym1sNy7Y3EqzoR7JEIlR1ipLftxn3u+0jzRg2tjYd5E9IGyod1Ip1YDJT09do/fDkUPDeua3AwWi/BPr0g0hiqNtLKaDFocUOJyg3tkYZTpmWaLpi4bCYrS49Jui8qmm5vAjIRn9CMYHJO+McOvoXGpC4+URoK7mlWEIwsuzuldLGhFvbdWMofbSLUNzi0UvbTIIcgG1PHM6pzjwPr/eh9j/zFfe92Si+EmmsxnouiGk9hIccUr8ZKahSQqyrXxaQ/c7Al1Y64339rORdqOH71uzLeK+17aGoBhS4yXhzX1HR2TFPHh/aGkPI/CCmt/i91xDn/L6SXQjKh7AUx9NYV/2cd3aXD7yuE/m4UShOIyE3CLg7/lGTY0gEktT1DD775nlp4xva/AGaFqjWdBgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=8035d77293881310717a7efdfaba1016"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=8035d77293881310717a7efdfaba1016"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_8035d77293881310717a7efdfaba1016</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-24 13:59:49</sys_created_on>
+        <sys_id>00959fb293881310717a7efdfaba100a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Leave Management System" source="x_2051811_leave_0">5a42d9b293001fd4717a7efdfaba1064</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Leave Management System">5a42d9b293001fd4717a7efdfaba1064</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-24 13:59:49</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_8035d77293881310717a7efdfaba1016</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-24 13:59:50</sys_created_on>
+        <sys_id>dc959fb293881310717a7efdfaba1053</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Leave Management System" source="x_2051811_leave_0">5a42d9b293001fd4717a7efdfaba1064</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Leave Management System">5a42d9b293001fd4717a7efdfaba1064</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-24 13:59:50</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_8035d77293881310717a7efdfaba1016"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_8035d77293881310717a7efdfaba1016"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>9a41b6c2ff12101088e94ee9453bf1a4</copied_from>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>leave_approval_process</internal_name>
+        <label_cache>[{"name":"df93d8f3-835b-4a9c-a7ed-dcfe3a2db2f5.approval_state","label":"1 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{"7f61c74c-3afb-4b73-88f5-6d25524915d6":["condition"],"28238a61-f339-45ed-bf09-9565c877f8c8":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current","label":"Trigger - Record Created➛Leave Management System Record","reference":"x_2051811_leave_0_leave_management_system","reference_display":"Leave Management System","type":"reference","base_type":"reference","usedInstances":{"4e97f400-4adf-4720-bfe2-c86281aba5fe":["record"],"b27d23ff-3f16-4a7c-adc9-dcbe7cdcc248":["record"],"02f51b51-1fb0-475f-b91f-1d587f0bb5ab":["record"],"a8a1c123-f2f1-48c4-9f61-f53732ca014b":["record"],"afc17db9-1319-4d4b-be58-05fd5faf63e7":["requested_item"],"60db3b6b-e12d-4c68-9df8-f2735b28674c":["record"],"df93d8f3-835b-4a9c-a7ed-dcfe3a2db2f5":["record"],"34d4a8b8-abb6-48d3-a2ca-e37b5d1fdd66":["record"],"bea42cb7-4fb5-4693-82ae-9c146bfc5b06":["record"]},"attributes":{}},{"name":"Created_1.current.employee.manager","label":"Trigger - Record Created➛Leave Management System Record➛Employee➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sys_user","column_name":"manager","usedInstances":{"4e97f400-4adf-4720-bfe2-c86281aba5fe":["approval_conditions"],"df93d8f3-835b-4a9c-a7ed-dcfe3a2db2f5":["approval_conditions"]}},{"name":"Created_1.current.employee","label":"Trigger - Record Created➛Leave Management System Record➛Employee","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_2051811_leave_0_leave_management_system","column_name":"employee","usedInstances":{}}]</label_cache>
+        <master>true</master>
+        <name>Leave Approval Process</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Leave Approval Process">8035d77293881310717a7efdfaba1016</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-24 14:17:47</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9fa95bfe93881310717a7efdfaba1087</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Leave Management System">5a42d9b293001fd4717a7efdfaba1064</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-26 08:24:39</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=9fa95bfe93881310717a7efdfaba1087"/>
+    <sys_variable_value action="delete_multiple" query="document_key=9fa95bfe93881310717a7efdfaba1087"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=9fa95bfe93881310717a7efdfaba1087"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=9fa95bfe93881310717a7efdfaba1087^sys_idNOT IN13a95bfe93881310717a7efdfaba108a"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>9fa95bfe93881310717a7efdfaba1087</id>
+        <name>Leave Approval Process</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-24 14:17:47</sys_created_on>
+        <sys_id>13a95bfe93881310717a7efdfaba108a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-24 14:17:47</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=13a95bfe93881310717a7efdfaba108a"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=9fa95bfe93881310717a7efdfaba1087^sys_idNOT IN9ba95bfe93881310717a7efdfaba108b,afa95bfe93881310717a7efdfaba10b7"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Leave Approval Process">9fa95bfe93881310717a7efdfaba1087</model>
+        <model_id>9fa95bfe93881310717a7efdfaba1087</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_9fa95bfe93881310717a7efdfaba1087</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-24 14:17:47</sys_created_on>
+        <sys_id>9ba95bfe93881310717a7efdfaba108b</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Leave Management System">5a42d9b293001fd4717a7efdfaba1064</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-26 08:24:39</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=9ba95bfe93881310717a7efdfaba108b"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Leave Approval Process">9fa95bfe93881310717a7efdfaba1087</model>
+        <model_id>9fa95bfe93881310717a7efdfaba1087</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_9fa95bfe93881310717a7efdfaba1087</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-24 14:17:48</sys_created_on>
+        <sys_id>afa95bfe93881310717a7efdfaba10b7</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Leave Management System">5a42d9b293001fd4717a7efdfaba1064</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-26 08:24:39</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=afa95bfe93881310717a7efdfaba10b7"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=9fa95bfe93881310717a7efdfaba1087"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=9fa95bfe93881310717a7efdfaba1087"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=9fa95bfe93881310717a7efdfaba1087^sys_idNOT INa7a95bfe93881310717a7efdfaba10f4"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Leave Approval Process">9fa95bfe93881310717a7efdfaba1087</flow>
+        <generation_source/>
+        <name>Created</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-24 14:17:48</sys_created_on>
+        <sys_id>a7a95bfe93881310717a7efdfaba10f4</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-24 18:29:31</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9VY227jNhD9FUFPLeACutixnbdtkkUDZDeo7W0fglSgpKEtlKJciVLiLvLvHepmWRfHjpWt85JAJMU5PDpzZuiH7yojNjD1Ul0Qm4E6UD0uIOSELTZrwGEhhy1OfDnnE+4SEYQb9VKEMQxUGgb+Avw1IwIXU8IiHAxCF0L1Uh+oCWExzDfRrYs74fvpNvmeaj6Nz8+WoY30ia5bDEgClpb/x3BkCT5wYUWbSICP77hehNE2f+Sv3smFypdyoTIvFjorj7khcPXy4XGgrkmIsYXE9b025UlwDnXI1ADNMXXTMDTNmAx1+8K0dcM1CWgablgnqnYY0cLXlgl4FsBdcEuSGlSGQNx7zjblihV+iYw2nzxH3r+4+0ST6yggdgeyufLRypnJhp1V4DlwvxZewLORDGc2GbDY518z/JJToCRmouAUR+II94O1hCxB5IjofBU8zYqAnz2eni6fZIFDWPlEhAg9OxYQScKpx5B6K+MmCuIwRT+7ubqfXVt/flpc/XYzs2Y388Xs9mpxc62+pOey/onljhnCHIuVHeelFMJnD5j8gDz2bUQzUCMn9NbikyO8pJDky2Ar86uAu17KSkPqTjEV7Uq9OP0+rWtap9qdSsRC8X/d/N7UcjZ4nG4vLghxgXTo1qYV3VZP3gJNtJBQPd0+Becjh0h4qGn/k4hzx3qrhv3ABXa93U7FyeUSVe3xdSwkW0+Ei8gSgUVc16rwKJciptdEnZ2tqezXNR3GHLewyi/UVHZKZMnonRfhAR4wLwu20i1xnt7lW85irgT4KfGP4sRhKK21cDp666PbZsjoHBg4oiIL+i2qPn3xosjjywrqMmjKSiNmGQ7lpRRHymJHJwZ/7DOtm6QnNTJr6X10bus6pTZQQxvLzNY106a6NtZGhLqmpjlGJbebYDpRipok3iXHj8vwKBUjO0B6dYpz8Fo1Gw6SUbKrwYIEKZHcSK76gab3BM2Q0GqGaB7liKUss+HrXXXuO1rP3QBxE4JvuIcao1xwgANSFjyhGb/B/Wzi/L0Mg5i7dTuSeyoeV7YrlJ9y/n7u0QlpEMJ+ALsrzskDt7QXwiV804P7mVS3pzAEDU3PRL+zR9Op7RCD0vHFGAy95n5bGK3YPoTrvaK2pE2uXQ7YKpykTW9HeN8JABs+eDTA0x0wF2ar/2VzH8PpnlbALYQaWkx6WcPwlsxzoZjrN9sboZNtfp+a8XQydUb6eOyM8R6DGU+HYBN9aIzIdHxhTka1jG9A2QdTtDDzQ2430SZKgXS4wbds6ryu6+8p2wiEkOXo+CrNsY9N3yFZkEqllJ9FSU0lCJWvAf/ldrtOmQMWwPSK21e5PgSF/LDK+8KwA7Fq9AsY+lcc3wkt+8wOVs7uSlUTSbJ71pOvVDCcjKbUbLcYOm2zmC2Ybphn314cmCFJZ6619RmHCj5pzZvOxuANEq7JpNox7Glp+iJF750U4/1IMU9uo4pc7LxHvgXsByphaV9xSh2TMcEKaNW8rwMFJxQMonhUyX9bBFexN4pYAVLKsF/GgIqMfqprV6tIE0qp4B8LJOvAG9UMh5W8gTq/QlWTQr83YHDHZDQyO/rhaf0G3AboFbxnX7aOzoqkLcn21q7j9q3v2Vq9KpLdVcSBdanXU7cXp9NO3VqeXjv16YVn3/29BcWZlpTH/wACuIsUdR8AAA==</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=9fa95bfe93881310717a7efdfaba1087^sys_idNOT IN3e43948793845310717a7efdfaba1035,7243948793845310717a7efdfaba1037,f643948793845310717a7efdfaba1034"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Leave Approval Process">9fa95bfe93881310717a7efdfaba1087</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>7f61c74c-3afb-4b73-88f5-6d25524915d6</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-24 18:29:31</sys_created_on>
+        <sys_id>3e43948793845310717a7efdfaba1035</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Leave Management System">5a42d9b293001fd4717a7efdfaba1064</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-26 08:24:39</sys_updated_on>
+        <ui_id>34d4a8b8-abb6-48d3-a2ca-e37b5d1fdd66</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVXWviQBT9KzLPEhKjYn1bFGHBtlAXX7ol3GRu7MDkY2cmVlf873uTTGLQbtdCX2R9kbkfk3OO55jnAxOcTdkQuevdeePI93x/4LqDydALx37oDbgPiB7rsxQSpEmFUaY4nbcgi7JwOMwUgkEeeE5UKIWpOR6pz4XOJezXdowq0auQnPps+vzSZzkoutGgYtPDWetaSBJClDT61GA6x2j2eXnmWVQkhCsQTXFpN+e20/s+pw4tlXA8t89wZzDlSEBikBr7LIGUg8nUnk2NKqhApPljKvftxKtITU00gZ0Wv+nJQ7eci5GYRVaE9hhYgepyPAcDK7o5MoVq9cpEhLrWhGMMhTSzbq0eeMyNyNJ6xUAom+1MFkn6UCvC2gs6v0ehCQTmJc8SeU0rXr1mb08NyIVIK0ksRZlFINsTGKNEWJgSzoGhxErjBPJcpJsgV9lWVMsEJXE2kg5OLLM3eqYWm9SBqMTtkKrgLKg+r8prUKIkcU/X0PKxz/RezyRofaJCGga/ihJJTcxSCCoVKgmCygnlcqREbr7Ro7ZogR/71vTh6COHRXcnQ3XuPBl/FwzckTfxvEAibDFw7Tc5BTa1FgTdYHIZhmU52LtvB3urZvBzGbmCQZORH5Uz3mdkY3JRW3Z3ew91w4Zk9GUhmdxSSCyNm0/Jv7LhDj789+04qYqD7uRCGzCF/lm4rs8JHhFEfhmBv0x9zv9XoGz8vxAouX4HdmN+TAiewaCmcRYA2+ytbbN9U3xZCryxW31uKAv/zQvj5Q+52iBBJwkAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=3e43948793845310717a7efdfaba1035"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Leave Approval Process">9fa95bfe93881310717a7efdfaba1087</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>28238a61-f339-45ed-bf09-9565c877f8c8</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-24 18:29:32</sys_created_on>
+        <sys_id>7243948793845310717a7efdfaba1037</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Leave Management System">5a42d9b293001fd4717a7efdfaba1064</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-26 08:24:39</sys_updated_on>
+        <ui_id>bea42cb7-4fb5-4693-82ae-9c146bfc5b06</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVXWviQBT9KzLPIolRsb4tirBgW6iLL90SrjNXnWXysTMTqyv+971JJjFo27XQF1lfZO7H5JzjOeb5wKRgI9ZD4fl3/oAHfhB0Pa877PnLQbD0uyIARJ+1WQwR0qRGnmhB5y2oLC8cDmONYFGEfodnWmNsj0fqC2lSBfuFG6MK30glqM9Gzy9tloKmGy1qNjqcta6FpGCJikafKkznGO0+zc8i4VlEuEJZFWduc+I6re8T6tBSDsf32gx3FmOBBGQFymCbRRALsInes5HVGRWItHiM1b6e2MjYlkQj2Bn5h57c8/K5FRIz7kSoj6ETqCyvJmBhTjdzm+lar0RyNKUmAleQKTtu1sqBx9TKJC5XLCxVtZ2oLIofSkVYfUHj98gMgcA055kjL2mt5pvk9akCOZVxIYmjqBIOqj6BtVouM5vDOTBUWGgcQZrKeB2mOtnKYpmgRJ21okNnpZJXeqaR67gDPMfdIVWhM6X6pCgvQMucxD1dQ8vHNjN7M1ZgzIkKaRj+znIkJTFHISxUKCQICyfky1zL1H6jR23RAT+2nemX/Y8cxu9OhmrceTL+Lux6fX/o+6FC2GLouW9yCqxLLQi6xegyDLN8sHVfD7bm1eDnMnIFgyojPwpnvM3IxeSiNmvuth7KhgtJ/8tCMrylkDgaN5+Sf2XD637479twUhEH08iFsWAz8zPzvIDs+gs5vRsuI/DO1Of8fwXKyv9TiUqYN2BX5seI4FkMSxpnAXDN1sI16zfFl6XAH3jF54ay8N+8MF7+Aon0kOMnCQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=7243948793845310717a7efdfaba1037"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f8f2e9920b10030085c083eb37673abd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Leave Approval Process">9fa95bfe93881310717a7efdfaba1087</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-24 18:29:31</sys_created_on>
+        <sys_id>f643948793845310717a7efdfaba1034</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Leave Management System">5a42d9b293001fd4717a7efdfaba1064</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-26 08:24:39</sys_updated_on>
+        <ui_id>df93d8f3-835b-4a9c-a7ed-dcfe3a2db2f5</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Y227bOBD9FYPPjpeyLEX2WxAjQBe9AHHalzgQaGpks6AuFaU0XsP/3pFIXWonrr3rPmTTlwScGVJnjs4hRd9viAjIhFx64RDG4yFdWJTalHoOp54NC/vSvbQZp6RPYhYBVmbAkyzA8SOTRRnYbK4zYDkEvjXgRZZBnG+3mA+ESiVbfzFlGOErIQPMk8n9Q5+kLMMVc8jIZLOTOhaSZAuQWHpbY9rFmK/TchwkvIgQly/q4Hszc2oyvXdTzOCkEg7tE3jKIQ4AcYRMKuiTiMUBy5NsTSZ5VmAAew4+xXLdVKxEnOs+I/akxD/4YHtY1oWAjXHDQTP0DT86HE5Zzma4Ms+LrKErERyUpiSAkBUyv+7GdMGnNBdJrKfkbCHr2YksovijJoQ0C3ReR6EQBKRlnyVy3VY4WyXfb2uQNyKuGDEtyoQz2YxYnmdiUeQlnA0BCRXFEUtTES/9NEseRTUZoUSDpcTBIJTJd3ymEst4wHiJe4CsssENxqdV+AvLRNnEB1wGJ2/7RK3VtWRKta0gh/63okSiGzMt+BULmoJyHs9Eml/hUx7BYN72jdwX/KC2eCslvVyr9id/SB3LsyxfAnsEn5r/qA+21Awg4ByifQe8Lwt7H5rC3qwuPM0YR4CvjXFn0O80Y2xRDf0q97Mrqmm9jzphTGEdNoWJtK7QcnrGFB59RaYwbb16V/zKEDBybQf/XIY2tYYW9cD1PD6mjHuu64zsVkOIAHtg0sdXrXDt1hpn2POPgFFL+8rg6N3WOF4EaOSu8MXEyx2pz+qgkfnwRJm/vPlb7lsSeiHudljWkT2ef48jysd9jsW3At6VOnKHC3dMveAiCOniYuTZzgXjQC/AtRxwApc7lv0bXEStQztz4D0j0lCA7H5N1Yl9M3Uyp5nqCFR7proxsF6CayxVDZ87Qar5OyfI+azlUfqavPWWvqz4QbFB5yD5mhRZfMAB/kqoShkvOqFTcZojjgBZO+JvjXLXELvg/40f7D9++P/7YeQclFrn47xRNU/iQJSIVccVemcGdQtfgefqKl5/vn/m5j2AKJXJGmCgLyTZdvuwb6D/tthpXjuCgOYaX0hQvyLEOK39yjOTum5rvw1N0jhudK6L/Ssz3Fu5xfCDWgvHrbaCAglCtXd/x5oTDXtOJnMSJzHMSX9Oyiq/FFcVxgoE1ySq2Gaz3epIkTGzgNUZtrMDtlZVpeIrCFCbVfSniF+ZwcTP8TPaEZzU/psW0JtqUvZpqi9RNU7Ni9g76WamoFrprzvRPfGcs514oz/2O8eVyW8uFXic4e53Rk8+/ABRpbylWxYAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=f643948793845310717a7efdfaba1034"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=9fa95bfe93881310717a7efdfaba1087"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=9fa95bfe93881310717a7efdfaba1087^sys_idNOT IN0743948793845310717a7efdfaba1039,4b43948793845310717a7efdfaba103c"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">aa43548793845310717a7efdfaba1043</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Leave Approval Process">9fa95bfe93881310717a7efdfaba1087</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-24 18:29:32</sys_created_on>
+        <sys_id>0743948793845310717a7efdfaba1039</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Leave Management System">5a42d9b293001fd4717a7efdfaba1064</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-26 08:24:39</sys_updated_on>
+        <ui_id>7f61c74c-3afb-4b73-88f5-6d25524915d6</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VXW/aMBT9K5WfA3JiQoG3iqpSpW6V1qovWxXd+AOsGTuLHShD/PddJwGqjWmr1se94XO/zj25R+yIa0LVBP/orrzXC0tmn58Tom3E8PeOKOM2d26h+a31ASyXD1t/K8iMwHiS5ZyzKZuMcpbSy/QSLqUSCkpIKU1JQiysJGZyZ4UO2tmiBRKyBtPEgFYXUFW1W0uPqNC+MrB9OhvkS21ELXt+FdTYKciazHY/hXTkpiiodMpTzrIxyyjNJqO0HLMyzQQDCQwbGiilwdT5gdzFXYv8nnXYVhH3odZ20b/v+i4PB9DVIrJKaULkS5BWSOSjwHiZkBVYAcHV2yNSSxD31pyApbYB25GY/OL1dxyY5XlMVBJX5LILHp9FL1oHq2sIgFQaHpq6T+VLp7n0nThCKmhMmL/GuoT7Kq7alQQozaHamWZlP3aKkGODwzdCpPFIQlZx00i930M9LN3m04HljbatKn3QOA7m+IKA2pVNiHx2RBq5wkbFCr89KlrEA9BtMXJZDRcGH8N4kzg03usQeCQ+RGFheIP4dQs/Qa3jFh+wDRZ3NEvwmhftbWM7lEmSfUL81s8NeH9aEtUtvjWRYrdyv1zR6RNLeK2rcIWT17LfY5+8r1VeuWS3E2rKxESxwYTl5WAEUz7AejEQXEkGmSgzlQ87s4ApcHaQ+/2XhlImeguJX/31Xm3f5swp5CpPaX7emaPxOWeel+ctdsz+YMd4C3/pRkrpfzv+sx21LzoT9bu1w9/Rjc/RPt3Mo9Zce6T2GLHbw/9bDGzxuKJnT9DG1V/jUids/wNJeZ+CKQcAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">2e43548793845310717a7efdfaba1048</block>
+        <comment/>
+        <connected_to>7f61c74c-3afb-4b73-88f5-6d25524915d6</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Leave Approval Process">9fa95bfe93881310717a7efdfaba1087</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-24 18:29:32</sys_created_on>
+        <sys_id>4b43948793845310717a7efdfaba103c</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Leave Management System">5a42d9b293001fd4717a7efdfaba1064</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-26 08:24:39</sys_updated_on>
+        <ui_id>28238a61-f339-45ed-bf09-9565c877f8c8</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Vy27bMBD8lYJn2dDDjq3cggQBAqQN0AS5tIGwIpc2W5pUSSqJa/jfu5RkO2hStEV97M2cfc2OduANs21o2uDv7Jn3amHY6aeHhCkTMfq9YVLbp2u7UPzK+ACG4+3aXwl2ykqRFuVkMiuL+WRaZOksm8EMpZBQQ5bWJUuYgRVSJrdGqKCsqTogYY+g2xhw+AU5zUmYUL7RsL5/FeBLpYXDgVcDjjoEdOx081NIRU4yBZmVPONFflLkaZrPJ1l9UtRZLgpAyKmhhho1pZ7vSL277pBfsw3rJuI+OGUWw/t66HK7A60TkVWWJgyfAxqBxEeC9piwFRgBwbr1HnEI4sboA7BUJlA7FpOfvfpOA/PpNCZKpBU59sH9sxoE62F5AQGISstD64ZUvrSKo+/FESih1eH8JdYn3DRx1b4kQK131Va3K/OhV4TtG+y+DyGtJxLYxE0j9WEPebu0Tx93LC+V6VQZgtpy0PsXBNKubkPks2GocUWNqhU0DSlaNc4+qq6YuKzGC02PcbxFGhrvdAw8Eh+TsDC+JPyig+/BqbjFe2pDxT3NGrziVXfT1I5kQrZNmF/7cw3eH5YkdatvbaTYrzwsV/X6xBLuVBPOaPIjDntsk+Na5IU7Nhshy0LMZTGaF9N6NIGSj6hejASXWEAu6lxOx7QpaQW6otkBt9vPbZoWoncQHeErbx2r7VGdmb3lzLfl+Rs75r+xY7yFP3Rjmqb/7fjPdlS+6k007NYNP6IbH6J9+pl7rbnyRO0uYle7/7UYWNNxRc8eoCfrvsalDtj2B7XdaY4hBwAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=9fa95bfe93881310717a7efdfaba1087"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=9fa95bfe93881310717a7efdfaba1087"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_9fa95bfe93881310717a7efdfaba1087</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-24 14:17:48</sys_created_on>
+        <sys_id>67a95bfe93881310717a7efdfaba10bf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Leave Management System" source="x_2051811_leave_0">5a42d9b293001fd4717a7efdfaba1064</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Leave Management System">5a42d9b293001fd4717a7efdfaba1064</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-24 14:17:48</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_9fa95bfe93881310717a7efdfaba1087</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-24 14:17:48</sys_created_on>
+        <sys_id>aba95bfe93881310717a7efdfaba10a7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Leave Management System" source="x_2051811_leave_0">5a42d9b293001fd4717a7efdfaba1064</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Leave Management System">5a42d9b293001fd4717a7efdfaba1064</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-24 14:17:48</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_9fa95bfe93881310717a7efdfaba1087"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_9fa95bfe93881310717a7efdfaba1087"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>8035d77293881310717a7efdfaba1016</sys_id>
+        <latest_snapshot>9fa95bfe93881310717a7efdfaba1087</latest_snapshot>
+        <compiler_build>glide-zurich-07-01-2025__patch10-05-22-2026_06-12-2026_2311.zip</compiler_build>
+        <version_record/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=8035d77293881310717a7efdfaba1016^sys_idNOT IN2fa99bfe93881310717a7efdfaba1017"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"2fa99bfe93881310717a7efdfaba1017","name":"plan","plan_signature":null}}</plan>
+        <plan_id>8035d77293881310717a7efdfaba1016</plan_id>
+        <snapshot>9fa95bfe93881310717a7efdfaba1087</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-24 14:17:49</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2fa99bfe93881310717a7efdfaba1017</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-26 08:24:40</sys_updated_on>
+        <trigger display_value="">860c58a393445710717a7efdfaba1026</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=8035d77293881310717a7efdfaba1016"/>
+</record_update>
